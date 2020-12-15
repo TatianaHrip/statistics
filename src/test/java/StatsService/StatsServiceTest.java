@@ -29,7 +29,7 @@ class StatsServiceTest {
     @Test
     void MonthsOfMaxSales() {
         StatsService servise = new StatsService();
-        int exp = 20;
+        int exp = 8;
         int act = servise.MonthsOfMaxSales(data);
         assertEquals(exp, act);
     }
@@ -38,7 +38,7 @@ class StatsServiceTest {
     @Test
     void numberMonthsOfMiniSales() {
         StatsService servise = new StatsService();
-        int exp = 7;
+        int exp = 9;
         int act = servise.MonthsOfMiniSales(data);
         assertEquals(exp, act);
     }
