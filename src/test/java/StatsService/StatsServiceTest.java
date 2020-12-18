@@ -3,6 +3,8 @@ package StatsService;
 import org.junit.jupiter.api.Test;
 import ru.netology.stats.StatsService;
 
+
+
 class StatsServiceTest {
     int[] data = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
@@ -60,6 +62,7 @@ class StatsServiceTest {
         assertEquals(exp, act);
     }
 }
+
 
 
 

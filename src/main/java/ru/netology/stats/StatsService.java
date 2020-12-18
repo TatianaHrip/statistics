@@ -12,7 +12,7 @@ public class StatsService {    //1
     public float AverageSales(int[] data) {   //2
         int sum = 0, month = 1;
         float average = 0;
-        for (int a : data) {
+        for (int ignored : data) {
             sum += average;
             month++;
         }
@@ -22,12 +22,11 @@ public class StatsService {    //1
 
 
     public int MonthsOfMaxSales(int[] data) {   //3
-        int sum = 0, max_month = 1, sales = 0;
+        int sum = 0, maxMonth = 1;
         for (int month : data) {
             sum++;
-            if (max_month <= month) {
-                max_month = month;
-                sales = sum;
+            if (maxMonth <= month) {
+                maxMonth= month;
             }
         }
 
@@ -49,7 +48,7 @@ public class StatsService {    //1
 
     public int MonthsSalesBelowAverage(int[] data) {    //5
         int sum = 0,  months = 1;
-        float below = 0;
+        float below;
         for (int average : data) {
             sum += average;
             months++;
@@ -65,7 +64,7 @@ public class StatsService {    //1
 
     public int MonthsSalesAboveAverage(int[] data) {  //6
         int sum = 0,  months = 1;
-        float average = 0;
+        float average;
         for (int above : data) {
             sum += above ;
             months++;
@@ -79,5 +78,4 @@ public class StatsService {    //1
         return months;
     }
 }
-
 
